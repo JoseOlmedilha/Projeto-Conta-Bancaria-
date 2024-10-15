@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class ContaTerminal {
 public static void main(String[] args) throws Exception {
       
     Scanner sc = new Scanner(System.in);
@@ -19,9 +19,14 @@ public static void main(String[] args) throws Exception {
 
     System.out.println("Digite o seu nome: ");
     nomeCliente = sc.nextLine();
-       
+   
+    System.out.println("Digite a quantidade inicial de Saldo : ");
+    saldoConta = sc.nextDouble();
 
     sc.close();
+
+    System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco ,%n sua agência é %s,conta %d e seu saldo %.2f já está disponível para saque",
+    nomeCliente, numeroAgencia, numeroConta, saldoConta);
 
     }
 }
